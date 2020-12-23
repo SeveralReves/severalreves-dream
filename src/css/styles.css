@@ -124,6 +124,10 @@ header nav{
 }
 
 /* MAIN */
+article{
+    margin-right: 3em;
+}
+
 article p{
     line-height: 2rem;
 }
@@ -142,7 +146,9 @@ article p{
 .shadow-text{
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
-
+.parrafo{
+    width: 30em;
+}
 .pics{
     width: auto;
     background-color: #E38227;
