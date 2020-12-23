@@ -1,0 +1,154 @@
+/* ESTILOS GENERALES */
+
+@import url(./fonts.css);
+
+@font-face {
+    font-family: Dream;
+    src: url(../assets/Dreamer.ttf);
+} 
+
+body{
+    background-image: url(../assets/Fondo.jpg);
+    background-size: cover;
+    color: #fff;
+    font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* grid */
+.wrapper{
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 17fr 1fr;
+    grid-template-areas: 
+      "header  header"
+      "content sidebar"
+}
+
+.main-head{
+    grid-area: header;
+}
+
+.content{
+    grid-area: content;
+    height: 80vh;
+}
+
+.main-aside{
+    grid-area: sidebar;
+    height: 80vh;
+
+}
+
+/* HEADER */
+header{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+header nav{
+    width: 500px;
+}
+
+.h-button{
+    color: rgba(255, 255, 255,0.6);
+}
+
+.m-button{
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: #E38227;
+}
+
+/* Aside */
+.redes{
+    padding: initial;
+}
+
+.redes li{
+    margin-top: 2rem;
+}
+.redes .icon{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255,0.2);
+}
+.redes .icon:hover{
+    color: rgba(255, 255, 255,1);
+}
+
+.buttons{
+    min-height: 150px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.p-button-prev, .p-button-next{
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #E38227;
+    opacity: 0.4;
+    transition: all ease 300ms;
+}
+
+.p-button-prev{
+    align-self: flex-start;
+}
+
+.p-button-next{
+    position: absolute; 
+    bottom: 0px;
+}
+
+.p-button-prev:hover, .p-button-next:hover{
+    opacity: 1;
+}
+
+/* MAIN */
+article p{
+    line-height: 2rem;
+}
+
+.rectangle{
+    background-color: #E38227;
+    width: 120px;
+    height: 10px;
+    position: relative;   
+    right: 0px;
+}
+
+.active{
+    color: #fff;
+}
+.shadow-text{
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.pics{
+    width: auto;
+    background-color: #E38227;
+    padding: 2px;
+} 
+.pics img{
+    width: 300px;
+    margin: 0px;
+}
